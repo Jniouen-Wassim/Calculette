@@ -13,7 +13,7 @@ animation: apparition 1s ease-out;
 @keyframes apparition {
   from {
       opacity: 0;
-      transform: translateY(-100px);
+      transform: translateY(-900px);
   }
   to {
       opacity: 1;
@@ -26,15 +26,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
+  
 }
 
 .calculatrice {
+  
   background-color: #222222;
   display: flex;
   flex-direction: column;
   padding: 15px;
-  border-radius: 5px;
-  box-shadow: 0 5px black;
+  border-radius:5px;
+  box-shadow:8px 10px 8px 0px black;
 }
 
 .ecranHaut {
@@ -71,12 +74,19 @@ body {
   background-color: rgb(92, 157, 187);
   grid-column: span 2;
   grid-row: span 2;
+
   
 }
 
 .Couleur-C {
 
   background-color: rgb(243, 147, 30);
+}
+
+.Couleur {
+  
+  border: 3px solid rgb(164, 129, 185);
+ 
 }
 
 .touches {
@@ -99,4 +109,23 @@ button:hover {
   border-radius: 5px;
   background-color: #665e5e;
   font-size: 18px;
+}
+#first {
+  /*Sert a mettre en premier plan devant le fond video*/
+  position: fixed;
+  margin: 0;
+  opacity: 1;
+
+}
+
+video{
+
+  height: 100vh;
+  width: 100% ;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /*height: 100vh;*/
+  opacity: 0.1;
+
 }

@@ -7,6 +7,7 @@ const allValeur = [{
 
     {
         valeur: "0",
+        class: '2case Couleur' //pour cree un css pour le boutton 'C'
     },
 
     {
@@ -18,42 +19,51 @@ const allValeur = [{
     },
     {
         valeur: "1",
+        class: '2case Couleur' //pour cree un css pour le boutton 'C'
     },
 
     {
         valeur: "2",
+        class: '2case Couleur' //pour cree un css pour le boutton 'C'
     },
 
     {
         valeur: "3",
+        class: '2case Couleur' //pour cree un css pour le boutton 'C'
     },
     {
         valeur: "-",
     },
     {
         valeur: "4",
+        class: '2case Couleur' //pour cree un css pour le boutton 'C'
     },
 
     {
         valeur: "5",
+        class: '2case Couleur' //pour cree un css pour le boutton 'C'
     },
 
     {
         valeur: "6",
+        class: '2case Couleur' //pour cree un css pour le boutton 'C'
     },
     {
         valeur: "+",
     },
     {
         valeur: "7",
+        class: '2case Couleur' //pour cree un css pour le boutton 'C'
     },
 
     {
         valeur: "8",
+        class: '2case Couleur' //pour cree un css pour le boutton 'C'
 
     },
     {
         valeur: "9",
+        class: '2case Couleur' //pour cree un css pour le boutton 'C'
 
     },
     {
@@ -63,6 +73,12 @@ const allValeur = [{
     {
         valeur: "=",
         class: '2case large' //pour cree un css pour augmenter la largeur de la case
+    },
+    {
+        valeur: "(",
+    },
+    {
+        valeur: ")",
     },
 ];
 
@@ -109,7 +125,7 @@ for (let element of allValeur) {
         bt.textContent = element.valeur;
     }
 
-    bt.addEventListener(
+    bt.addEventListener( // 'addEventListener' rajouter un evenement
 
         'click',
         function () {

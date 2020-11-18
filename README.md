@@ -40,6 +40,6 @@
 
 ## Screenshots de mon projets :
 
-![ Screenshots 1 ](./calculette.png)
+![ Screenshots 1 ](calculette.png)
 
 

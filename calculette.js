@@ -92,9 +92,9 @@ const allCalculette = document.createElement('div');
 allCalculette.className = 'calculatrice';
 mainContainer.appendChild(allCalculette);
 
-const memoir = document.createElement('div');
-memoir.className = 'ecranHaut';
-allCalculette.appendChild(memoir);
+const allEcranHautmemoir = document.createElement('div');
+allEcranHautmemoir.className = 'ecranHaut';
+allCalculette.appendChild(allEcranHautmemoir);
 
 const allEcranBas = document.createElement('div');
 allEcranBas.className = 'ecranBas';
@@ -110,6 +110,7 @@ allCalculette.appendChild(allTouche);
 function safeEval(str) {
     return Function('return ' + str)()
 }
+
 /*-------------------------------------------------------( boucle )------------------------------- */
 /* Debut de tout les boutons de l'HTML */
 
@@ -131,9 +132,9 @@ for (let element of allValeur) {
         function () {
             if (element.valeur == 'C') {
                 allEcranBas.textContent = '';
-                memoir.textContent = '';
+                allEcranHautmemoir.textContent = '';
             } else if (element.valeur == '=') {
-                memoir.textContent = allEcranBas.textContent;
+                allEcranHautmemoir.textContent = allEcranBas.textContent;
                 let reponse = safeEval(allEcranBas.textContent);
                 allEcranBas.textContent = reponse;
             } else {

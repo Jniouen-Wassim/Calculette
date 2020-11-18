@@ -16,7 +16,7 @@
 
 ## Les consignes
 
-[ => lien des consignes](https://github.com/becodeorg/bxl-hopper-1-25/tree/master/The%20Field/3.HTML%2BCSS/0.progressive_enhancement)
+[ => lien des consignes](https://github.com/becodeorg/bxl-hopper-1-25/tree/master/The%20Hill/projects/1.calculator)
 
 ---------------------------------------------
 

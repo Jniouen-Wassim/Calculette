@@ -41,3 +41,5 @@
 ![ Screenshots 1 ](calculette.png)
 
 
+### License
+© Jniouen Wassim

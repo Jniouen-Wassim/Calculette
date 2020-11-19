@@ -102,17 +102,17 @@ allAffichage.className = 'affichage';
 allCalculette.appendChild(allAffichage);
 
 
-const allEcranGauche = document.createElement('div');
-allEcranGauche.className = 'ecranGauche';
-allAffichage.appendChild(allEcranGauche);
+const allEcranGauche_Historique = document.createElement('div');
+allEcranGauche_Historique.className = 'ecranGauche_Huistorique';
+allAffichage.appendChild(allEcranGauche_Historique);
 
 const allEcranDroite = document.createElement('div');
 allEcranDroite.className = 'ecranDroite';
 allAffichage.appendChild(allEcranDroite);
 
-const allEcranHautMemoir = document.createElement('div');
-allEcranHautMemoir.className = 'ecranHautMemoir';
-allEcranDroite.appendChild(allEcranHautMemoir);
+const allEcranHaut_Memoir = document.createElement('div');
+allEcranHaut_Memoir.className = 'ecranHaut_Memoir';
+allEcranDroite.appendChild(allEcranHaut_Memoir);
 
 const allEcranBas = document.createElement('div');
 allEcranBas.className = 'ecranBas';
@@ -134,9 +134,9 @@ function safeEval(str) {
 
 function historique (){
 
-    let histori = allEcranHautMemoir.textContent + "= " + allEcranBas.textContent ;
+    let histori = allEcranHaut_Memoir.textContent + "= " + allEcranBas.textContent;
     arr.push(histori);
-    allEcranGauche.textContent = arr ;
+    allEcranGauche_Historique.textContent = arr ;
 }
 
 /*-------------------------------------------------------( boucle )------------------------------- */
@@ -164,20 +164,21 @@ for (let element of allValeur) {
         function () {
             if (element.valeur == 'C') {
                 allEcranBas.textContent = '';
-                allEcranHautMemoir.textContent = '';
+                allEcranHaut_Memoir.textContent = '';
             } else if (element.valeur == '=') {
-                allEcranHautMemoir.textContent = allEcranBas.textContent;
+                allEcranHaut_Memoir.textContent = allEcranBas.textContent;
                 let reponse = safeEval(allEcranBas.textContent);
                 allEcranBas.textContent = reponse;
-                
-                historique(allEcranBas.textContent , allEcranHautMemoir.textContent) 
-                
+              
+                historique(allEcranBas.textContent , allEcranHaut_Memoir.textContent) 
+                // allEcranBas.textContent = '';
+                // allEcranHaut_Memoir.textContent = '';
 
             } 
             else if (element.valeur == 'AC'){
                 allEcranBas.textContent = '';
-                allEcranHautMemoir.textContent = '';
-                allEcranGauche.textContent = '' ;
+                allEcranHaut_Memoir.textContent = '';
+                allEcranGauche_Historique.textContent = '' ;
                 arr = [];
             }
             

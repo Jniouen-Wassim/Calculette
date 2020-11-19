@@ -1,7 +1,5 @@
 # Calculette
 
-# The Story of the Chinese Farmer
-
 * Projet fait par : Jniouen Wassim
 
 * Dans le but d'un exercice pour ma formation   Web "Becode"
